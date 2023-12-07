@@ -54,47 +54,47 @@ public class DayOne {
             if(input.charAt(left) == 't') {
                 if(input.substring(left, Math.min(right, left + 3)).equals("two")) {
                     result += "2";
-                    left += 3;
+                    left += 2;
                     break;
                 }
                 if(input.substring(left, Math.min(right, left + 5)).equals("three")) {
                     result += "3";
-                    left += 5;
+                    left += 4;
                     break;
                 }
             }
             if(input.charAt(left) == 'f') {
                 if(input.substring(left, Math.min(right, left + 4)).equals("four")) {
                     result += "4";
-                    left += 4;
+                    left += 3;
                     break;
                 }
                 if(input.substring(left, Math.min(right, left + 4)).equals("five")) {
                     result += "5";
-                    left += 5;
+                    left += 3;
                     break;
                 }
             }
             if(input.charAt(left) == 's') {
                 if(input.substring(left, Math.min(right, left + 3)).equals("six")) {
                     result += "6";
-                    left += 3;
+                    left += 2;
                     break;
                 }
                 if(input.substring(left, Math.min(right, left + 5)).equals("seven")) {
                     result += "7";
-                    left += 5;
+                    left += 4;
                     break;
                 }
             }
             if(input.charAt(left) == 'e' && input.substring(left, Math.min(right, left + 5)).equals("eight")) {
                 result += "8";
-                left += 5;
+                left += 4;
                 break;
             }
             if(input.charAt(left) == 'n' && input.substring(left, Math.min(right,left + 4)).equals("nine")) {
                 result += "9";
-                left += 4;
+                left += 3;
                 break;
             }
             left++;

@@ -60,13 +60,13 @@ public class DayOneTest {
     @Test
     public void testSolvePartTwoWithValidDigitsAndWords() {
         // Arrange
-        String[] inputs = {"two1nine", "eightwothree", "abcone2threexyz", "xtwone3four", "4nineeightseven2", "zoneight234", "7pqrstsixteen"};
+        String[] inputs = {"two1nine", "eightwothree", "abcone2threexyz", "xtwone3four", "4nineeightseven2", "zoneight234", "7pqrstsixteen", "seven2wut"};
 
         // Act
         int result = DayOne.solvePartTwo(inputs);
 
         // Assert
-        int expected = 281; // expected sum
+        int expected = 353; // expected sum
         assertEquals(expected, result);
     }
 
