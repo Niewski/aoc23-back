@@ -1,10 +1,10 @@
 package com.niewski.aoc23.solutions;
 
-import com.niewski.aoc23.responses.DayOneResponse;
+import com.niewski.aoc23.responses.TwoIntResponse;
 
 public class DayOne {
 
-    public static DayOneResponse solve(String[] inputs) {
+    public static TwoIntResponse solve(String[] inputs) {
         int resultPartOne = 0;
         int resultPartTwo = 0;
 
@@ -13,7 +13,7 @@ public class DayOne {
             resultPartTwo += getNumberFromDigitsAndWords(input);
         }
 
-        return new DayOneResponse(resultPartOne, resultPartTwo);
+        return new TwoIntResponse(resultPartOne, resultPartTwo);
     }
 
     public static int solvePartOne(String[] inputs) {
@@ -34,7 +34,7 @@ public class DayOne {
             }
         }
         return result;
-    }   
+    }
 
     private static int getNumberFromDigitsAndWords(String input) {
         int left = 0, right = input.length() - 1;

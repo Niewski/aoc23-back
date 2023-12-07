@@ -1,11 +1,11 @@
 package com.niewski.aoc23.responses;
 
-public class DayOneResponse {
+public class TwoIntResponse {
     private int resultPartOne;
     private int resultPartTwo;
 
     // Constructor
-    public DayOneResponse(int resultPartOne, int resultPartTwo) {
+    public TwoIntResponse(int resultPartOne, int resultPartTwo) {
         this.resultPartOne = resultPartOne;
         this.resultPartTwo = resultPartTwo;
     }
