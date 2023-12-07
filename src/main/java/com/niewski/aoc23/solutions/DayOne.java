@@ -21,6 +21,15 @@ public class DayOne {
                 left++;
             }
         }
+        if(result.length()==0) {
+            if (Character.isDigit(input.charAt(left))) {
+                result += input.charAt(left);
+                result += input.charAt(left);
+                return Integer.parseInt(result);
+            } else {
+                return 0;
+            }
+        } 
         while (right >= left) {
             if (Character.isDigit(input.charAt(right))) {
                 result += input.charAt(right);
