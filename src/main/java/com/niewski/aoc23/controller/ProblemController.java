@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.niewski.aoc23.responses.TwoIntResponse;
 import com.niewski.aoc23.solutions.DayOne;
+import com.niewski.aoc23.solutions.DayThree;
 import com.niewski.aoc23.solutions.DayTwo;
 
 @RestController
@@ -27,6 +28,11 @@ public class ProblemController {
     @PostMapping("/day2")
     public ResponseEntity<TwoIntResponse> solveDayTwo(@RequestBody String input) {
         return ResponseEntity.ok(DayTwo.solve(input));
+    }
+
+    @PostMapping("/day3")
+    public ResponseEntity<TwoIntResponse> solveDayThree(@RequestBody char[][] input) {
+        return ResponseEntity.ok(DayThree.solve(input));
     }
 }
 
