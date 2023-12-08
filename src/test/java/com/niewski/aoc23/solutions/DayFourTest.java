@@ -85,12 +85,12 @@ public class DayFourTest {
     public void testSolvePartOneWithValidInputs() {
         // Arrange
         List<ScratchOff> inputs = new ArrayList<ScratchOff>();
-        // Returns 1
+        // Returns 1 point
         inputs.add(loadSingleWinScratchOff());
-        // Returns 8 each
+        // Returns 8 points each
         inputs.add(loadMultiWinScratchOff());
         inputs.add(loadMultiWinScratchOff());
-        // Returns 0
+        // Returns 0 points
         inputs.add(loadLosingScratchOff());
         inputs.add(loadLosingScratchOff());
 
@@ -103,5 +103,27 @@ public class DayFourTest {
         assertEquals(expected, result);
     }
 
+    // Test solvePartTwo
+    @Test
+    public void testSolvePartTwoWithValidInputs() {
+        // Arrange
+        List<ScratchOff> inputs = new ArrayList<ScratchOff>();
+        // Returns 1 match
+        inputs.add(loadSingleWinScratchOff()); // 1 card
+        // Returns 4 matches each
+        inputs.add(loadMultiWinScratchOff()); // 2 cards
+        inputs.add(loadMultiWinScratchOff()); // 3 cards
+        // Returns 0 matches
+        inputs.add(loadLosingScratchOff()); // 6 cards
+        inputs.add(loadLosingScratchOff()); // 6 cards
+
+
+        // Act
+        int result = DayFour.solvePartTwo(inputs);
+
+        // Assert
+        int expected = 18; // expected sum
+        assertEquals(expected, result);
+    }
 
 }
