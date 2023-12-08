@@ -1,5 +1,7 @@
 package com.niewski.aoc23.controller;
 
+import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -7,7 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.niewski.aoc23.dto.ScratchOff;
 import com.niewski.aoc23.responses.TwoIntResponse;
+import com.niewski.aoc23.solutions.DayFour;
 import com.niewski.aoc23.solutions.DayOne;
 import com.niewski.aoc23.solutions.DayThree;
 import com.niewski.aoc23.solutions.DayTwo;
@@ -33,6 +37,11 @@ public class ProblemController {
     @PostMapping("/day3")
     public ResponseEntity<TwoIntResponse> solveDayThree(@RequestBody char[][] input) {
         return ResponseEntity.ok(DayThree.solve(input));
+    }
+
+    @PostMapping("/day4")
+    public ResponseEntity<TwoIntResponse> solveDayFour(@RequestBody List<ScratchOff> input) {
+        return ResponseEntity.ok(DayFour.solve(input));
     }
 }
 
