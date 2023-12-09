@@ -9,8 +9,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.niewski.aoc23.dto.IslandAlmanac;
 import com.niewski.aoc23.dto.ScratchOff;
 import com.niewski.aoc23.responses.TwoIntResponse;
+import com.niewski.aoc23.responses.TwoLongResponse;
+import com.niewski.aoc23.solutions.DayFive;
 import com.niewski.aoc23.solutions.DayFour;
 import com.niewski.aoc23.solutions.DayOne;
 import com.niewski.aoc23.solutions.DayThree;
@@ -42,6 +45,11 @@ public class ProblemController {
     @PostMapping("/day4")
     public ResponseEntity<TwoIntResponse> solveDayFour(@RequestBody List<ScratchOff> input) {
         return ResponseEntity.ok(DayFour.solve(input));
+    }
+
+    @PostMapping("/day5")
+    public ResponseEntity<TwoLongResponse> solveDayFive(@RequestBody IslandAlmanac input) {
+        return ResponseEntity.ok(DayFive.solve(input));
     }
 }
 

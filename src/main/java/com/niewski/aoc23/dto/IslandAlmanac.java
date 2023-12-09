@@ -3,17 +3,17 @@ package com.niewski.aoc23.dto;
 import java.util.List;
 
 public class IslandAlmanac {
-    private List<Integer> seeds;
-    private List<List<Integer>> seedToSoil;
-    private List<List<Integer>> soilToFertilizer;
-    private List<List<Integer>> fertilizerToWater;
-    private List<List<Integer>> waterToLight;
-    private List<List<Integer>> lightToTemperature;
-    private List<List<Integer>> temperatureToHumidity;
-    private List<List<Integer>> humidityToLocation;
+    private List<Long> seeds;
+    private List<List<Long>> seedToSoil;
+    private List<List<Long>> soilToFertilizer;
+    private List<List<Long>> fertilizerToWater;
+    private List<List<Long>> waterToLight;
+    private List<List<Long>> lightToTemperature;
+    private List<List<Long>> temperatureToHumidity;
+    private List<List<Long>> humidityToLocation;
 
     // Constructor
-    public IslandAlmanac(List<Integer> seeds, List<List<Integer>> seedToSoil, List<List<Integer>> soilToFertilizer, List<List<Integer>> fertilizerToWater, List<List<Integer>> waterToLight, List<List<Integer>> lightToTemperature, List<List<Integer>> temperatureToHumidity, List<List<Integer>> humidityToLocation) {
+    public IslandAlmanac(List<Long> seeds, List<List<Long>> seedToSoil, List<List<Long>> soilToFertilizer, List<List<Long>> fertilizerToWater, List<List<Long>> waterToLight, List<List<Long>> lightToTemperature, List<List<Long>> temperatureToHumidity, List<List<Long>> humidityToLocation) {
         this.seeds = seeds;
         this.seedToSoil = seedToSoil;
         this.soilToFertilizer = soilToFertilizer;
@@ -25,67 +25,67 @@ public class IslandAlmanac {
     }
 
     // Getters and Setters
-    public List<Integer> getSeeds() {
+    public List<Long> getSeeds() {
         return seeds;
     }
 
-    public void setSeeds(List<Integer> seeds) {
+    public void setSeeds(List<Long> seeds) {
         this.seeds = seeds;
     }
 
-    public List<List<Integer>> getSeedToSoil() {
+    public List<List<Long>> getSeedToSoil() {
         return seedToSoil;
     }
 
-    public void setSeedToSoil(List<List<Integer>> seedToSoil) {
+    public void setSeedToSoil(List<List<Long>> seedToSoil) {
         this.seedToSoil = seedToSoil;
     }
 
-    public List<List<Integer>> getSoilToFertilizer() {
+    public List<List<Long>> getSoilToFertilizer() {
         return soilToFertilizer;
     }
 
-    public void setSoilToFertilizer(List<List<Integer>> soilToFertilizer) {
+    public void setSoilToFertilizer(List<List<Long>> soilToFertilizer) {
         this.soilToFertilizer = soilToFertilizer;
     }
 
-    public List<List<Integer>> getFertilizerToWater() {
+    public List<List<Long>> getFertilizerToWater() {
         return fertilizerToWater;
     }
 
-    public void setFertilizerToWater(List<List<Integer>> fertilizerToWater) {
+    public void setFertilizerToWater(List<List<Long>> fertilizerToWater) {
         this.fertilizerToWater = fertilizerToWater;
     }
 
-    public List<List<Integer>> getWaterToLight() {
+    public List<List<Long>> getWaterToLight() {
         return waterToLight;
     }
 
-    public void setWaterToLight(List<List<Integer>> waterToLight) {
+    public void setWaterToLight(List<List<Long>> waterToLight) {
         this.waterToLight = waterToLight;
     }
 
-    public List<List<Integer>> getLightToTemperature() {
+    public List<List<Long>> getLightToTemperature() {
         return lightToTemperature;
     }
 
-    public void setLightToTemperature(List<List<Integer>> lightToTemperature) {
+    public void setLightToTemperature(List<List<Long>> lightToTemperature) {
         this.lightToTemperature = lightToTemperature;
     }
 
-    public List<List<Integer>> getTemperatureToHumidity() {
+    public List<List<Long>> getTemperatureToHumidity() {
         return temperatureToHumidity;
     }
 
-    public void setTemperatureToHumidity(List<List<Integer>> temperatureToHumidity) {
+    public void setTemperatureToHumidity(List<List<Long>> temperatureToHumidity) {
         this.temperatureToHumidity = temperatureToHumidity;
     }
 
-    public List<List<Integer>> getHumidityToLocation() {
+    public List<List<Long>> getHumidityToLocation() {
         return humidityToLocation;
     }
 
-    public void setHumidityToLocation(List<List<Integer>> humidityToLocation) {
+    public void setHumidityToLocation(List<List<Long>> humidityToLocation) {
         this.humidityToLocation = humidityToLocation;
     }
 
